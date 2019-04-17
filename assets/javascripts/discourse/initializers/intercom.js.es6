@@ -11,7 +11,7 @@ function initialize(api) {
 
   window.intercomSettings = {
     app_id: siteSettings.intercom_app_id,
-    email: currentUser.email,
+    email: currentUser.external_id,
     user_hash: currentUser.intercom_hash
   };
 
