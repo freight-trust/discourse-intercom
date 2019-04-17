@@ -14,7 +14,7 @@ after_initialize do
     OpenSSL::HMAC.hexdigest(
       'sha256',
       SiteSetting.intercom_secret_key,
-      object.email
+      object.external_id
     )
   end
 end
