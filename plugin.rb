@@ -6,8 +6,8 @@
 enabled_site_setting :intercom_enabled
 
 after_initialize do
-  add_to_serializer(:current_user, :email) do
-    object.email
+  add_to_serializer(:current_user, :external_id) do
+    object.external_id
   end
 
   add_to_serializer(:current_user, :intercom_hash) do
